@@ -8,15 +8,15 @@ provider "aws" {
 
 #*******************************************
 #*** #set the domain name               #***  
-variable "domainName" { #***
-  default = "peval.cff" #***
-  type    = string      #***
-}                       #***        
-#***  
+variable "domainName" {                 #***
+  default = "peval.cff"                 #***
+  type    = string                      #***
+}                                       #***        
+                                        #***  
 # add subscriptions to sns              #*** 
-locals {                            #***
-  emails = ["hannaba410@gmail.com"] #***
-}                                   #***                       
+locals {                                #***
+  emails = ["hannaba410@gmail.com"]     #***
+}                                       #***                       
 #*******************************************
 
 
